@@ -13,3 +13,140 @@ __BY RECHEDMCVN__
 ⬛        ⬛   ⬛⬛⬜⬛⬜⬜⬛⬜⬛⬛    ⬛
 ⬛⬛⬛⬛⬛     ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛    ⬛
 ]]--
+function TP(Pos)
+game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = Pos
+end
+local spawn = task.spawn
+local Character = game:GetService("Players").LocalPlayer.Character
+local Remotes = game:GetService("ReplicatedStorage").Remotes.CommF_
+local Backpack = game:GetService("Players").LocalPlayer.Backpack
+spawn(function()
+while wait() do
+for i,v in pairs(game.Workspace:GetChildren()) do
+if string.find(v.Name, "Fruit") then
+TP(v.Handle.CFrame)
+end
+end
+end
+end)
+spawn(function()
+while wait() do
+if Character:FindFirstChild("Rocket Fruit") or Backpack:FindFirstChild("Rocket Fruit") then
+Remotes:InvokeServer("StoreFruit","Rocket-Rocket",Backpack:FindFirstChild("Rocket Fruit"))
+end
+if Character:FindFirstChild("Rocket Fruit") or Backpack:FindFirstChild("Spin Fruit") then
+Remotes:InvokeServer("StoreFruit","Spin-Spin",Backpack:FindFirstChild("Spin Fruit"))
+end
+if Character:FindFirstChild("Blade Fruit") or Backpack:FindFirstChild("Blade Fruit") then
+Remotes:InvokeServer("StoreFruit","Blade-Blade",Backpack:FindFirstChild("Blade Fruit"))
+end
+if Character:FindFirstChild("Spring Fruit") or Backpack:FindFirstChild("Spring Fruit") then
+Remotes:InvokeServer("StoreFruit","Spring-Spring",Backpack:FindFirstChild("Spring Fruit"))
+end
+if Character:FindFirstChild("Bomb Fruit") or Backpack:FindFirstChild("Bomb Fruit") then
+Remotes:InvokeServer("StoreFruit","Bomb-Bomb",Backpack:FindFirstChild("Bomb Fruit"))
+end
+if Character:FindFirstChild("Smoke Fruit") or Backpack:FindFirstChild("Smoke Fruit") then
+Remotes:InvokeServer("StoreFruit","Smoke-Smoke",Backpack:FindFirstChild("Smoke Fruit"))
+end
+if Character:FindFirstChild("Spike Fruit") or Backpack:FindFirstChild("Spike Fruit") then
+Remotes:InvokeServer("StoreFruit","Spike-Spike",Backpack:FindFirstChild("Spike Fruit"))
+end
+if Character:FindFirstChild("Flame Fruit") or Backpack:FindFirstChild("Flame Fruit") then
+Remotes:InvokeServer("StoreFruit","Flame-Flame",Backpack:FindFirstChild("Flame Fruit"))
+end
+if Character:FindFirstChild("Falcon Fruit") or Backpack:FindFirstChild("Falcon Fruit") then
+Remotes:InvokeServer("StoreFruit","Falcon-Falcon",Backpack:FindFirstChild("Falcon Fruit"))
+end
+if Character:FindFirstChild("Ice Fruit") or Backpack:FindFirstChild("Ice Fruit") then
+Remotes:InvokeServer("StoreFruit","Ice-Ice",Backpack:FindFirstChild("Ice Fruit"))
+end
+if Character:FindFirstChild("Sand Fruit") or Backpack:FindFirstChild("Sand Fruit") then
+Remotes:InvokeServer("StoreFruit","Sand-Sand",Backpack:FindFirstChild("Sand Fruit"))
+end
+if Character:FindFirstChild("Dark Fruit") or Backpack:FindFirstChild("Dark Fruit") then
+Remotes:InvokeServer("StoreFruit","Dark-Dark",Backpack:FindFirstChild("Dark Fruit"))
+end
+if Character:FindFirstChild("Diamond Fruit") or Backpack:FindFirstChild("Diamond Fruit") then
+Remotes:InvokeServer("StoreFruit","Rocket-Rocket",Backpack:FindFirstChild("Diamond Fruit"))
+end
+if Character:FindFirstChild("Light Fruit") or Backpack:FindFirstChild("Light Fruit") then
+Remotes:InvokeServer("StoreFruit","Light-Light",Backpack:FindFirstChild("Light Fruit"))
+end
+if Character:FindFirstChild("Rubber Fruit") or Backpack:FindFirstChild("Rubber Fruit") then
+Remotes:InvokeServer("StoreFruit","Rubber-Rubber",Backpack:FindFirstChild("Rubber Fruit"))
+end
+if Character:FindFirstChild("Ghost Fruit") or Backpack:FindFirstChild("Ghost Fruit") then
+Remotes:InvokeServer("StoreFruit","Ghost-Ghost",Backpack:FindFirstChild("Ghost Fruit"))
+end
+if Character:FindFirstChild("Magma Fruit") or Backpack:FindFirstChild("Magma Fruit") then
+Remotes:InvokeServer("StoreFruit","Magma-Magma",Backpack:FindFirstChild("Magma Fruit"))
+end
+if Character:FindFirstChild("Quake Fruit") or Backpack:FindFirstChild("Quake Fruit") then
+Remotes:InvokeServer("StoreFruit","Quake-Quake",Backpack:FindFirstChild("Quake Fruit"))
+end
+if Character:FindFirstChild("Buddha Fruit") or Backpack:FindFirstChild("Buddha Fruit") then
+Remotes:InvokeServer("StoreFruit","Buddha-Buddha",Backpack:FindFirstChild("Buddha Fruit"))
+end
+if Character:FindFirstChild("Love Fruit") or Backpack:FindFirstChild("Love Fruit") then
+Remotes:InvokeServer("StoreFruit","Love-Love",Backpack:FindFirstChild("Love Fruit"))
+end
+if Character:FindFirstChild("Spider Fruit") or Backpack:FindFirstChild("Spider Fruit") then
+Remotes:InvokeServer("StoreFruit","Spider-Spider",Backpack:FindFirstChild("Spider Fruit"))
+end
+if Character:FindFirstChild("Sound Fruit") or Backpack:FindFirstChild("Sound Fruit") then
+Remotes:InvokeServer("StoreFruit","Sound--Sound",Backpack:FindFirstChild("Sound Fruit"))
+end
+if Character:FindFirstChild("Phoniex Fruit") or Backpack:FindFirstChild("Phoniex Fruit") then
+Remotes:InvokeServer("StoreFruit","Phoniex-Phoniex",Backpack:FindFirstChild("Phoniex Fruit"))
+end
+if Character:FindFirstChild("Portal Fruit") or Backpack:FindFirstChild("Portal Fruit") then
+Remotes:InvokeServer("StoreFruit","Portal-Portal",Backpack:FindFirstChild("Portal Fruit"))
+end
+if Character:FindFirstChild("Rumble Fruit") or Backpack:FindFirstChild("Rumble Fruit") then
+Remotes:InvokeServer("StoreFruit","Rumble-Rumble",Backpack:FindFirstChild("Rumble Fruit"))
+end
+if Character:FindFirstChild("Pain Fruit") or Backpack:FindFirstChild("Pain Fruit") then
+Remotes:InvokeServer("StoreFruit","Pain-Pain",Backpack:FindFirstChild("Pain Fruit"))
+end
+if Character:FindFirstChild("Blizzard Fruit") or Backpack:FindFirstChild("Blizzard Fruit") then
+Remotes:InvokeServer("StoreFruit","Blizzard-Blizzard",Backpack:FindFirstChild("Blizzard Fruit"))
+end
+if Character:FindFirstChild("Gravity Fruit") or Backpack:FindFirstChild("Gravity Fruit") then
+Remotes:InvokeServer("StoreFruit","Gravity-Gravity",Backpack:FindFirstChild("Gravity Fruit"))
+end
+if Character:FindFirstChild("Mammoth Fruit") or Backpack:FindFirstChild("Mammoth Fruit") then
+Remotes:InvokeServer("StoreFruit","Mammoth-Mammoth",Backpack:FindFirstChild("Mammoth Fruit"))
+end
+if Character:FindFirstChild("T-Rex Fruit") or Backpack:FindFirstChild("T-Rex Fruit") then
+Remotes:InvokeServer("StoreFruit","T-Rex-T-Rex",Backpack:FindFirstChild("T-Rex Fruit"))
+end
+if Character:FindFirstChild("Dough Fruit") or Backpack:FindFirstChild("Dough Fruit") then
+Remotes:InvokeServer("StoreFruit","Dough-Dough",Backpack:FindFirstChild("Dough Fruit"))
+end
+if Character:FindFirstChild("Shadow Fruit") or Backpack:FindFirstChild("Shadow Fruit") then
+Remotes:InvokeServer("StoreFruit","Shadow-Shadow",Backpack:FindFirstChild("Shadow Fruit"))
+end
+if Character:FindFirstChild("Venom Fruit") or Backpack:FindFirstChild("Venom Fruit") then
+Remotes:InvokeServer("StoreFruit","Venom-Venom",Backpack:FindFirstChild("Venom Fruit"))
+end
+if Character:FindFirstChild("Control Fruit") or Backpack:FindFirstChild("Control Fruit") then
+Remotes:InvokeServer("StoreFruit","Control-Control",Backpack:FindFirstChild("Control Fruit"))
+end
+if Character:FindFirstChild("Gas Fruit") or Backpack:FindFirstChild("Gas Fruit") then
+Remotes:InvokeServer("StoreFruit","Gas-Gas",Backpack:FindFirstChild("Gas Fruit"))
+end
+if Character:FindFirstChild("Spirit Fruit") or Backpack:FindFirstChild("Spirit Fruit") then
+Remotes:InvokeServer("StoreFruit","Spirit-Spirit",Backpack:FindFirstChild("Spirit Fruit"))
+end
+if Character:FindFirstChild("Leopard Fruit") or Backpack:FindFirstChild("Leopard Fruit") then
+Remotes:InvokeServer("StoreFruit","Leopard-Leopard",Backpack:FindFirstChild("Leopard Fruit"))
+end
+if Character:FindFirstChild("Kitsune Fruit") or Backpack:FindFirstChild("Kitsune Fruit") then
+Remotes:InvokeServer("StoreFruit","Kitsune-Kitsune",Backpack:FindFirstChild("Kitsune Fruit"))
+end
+if Character:FindFirstChild("Dragon Fruit") or Backpack:FindFirstChild("Dragon Fruit") then
+Remotes:InvokeServer("StoreFruit","Dragon-Dragon",Backpack:FindFirstChild("Dragon Fruit"))
+end
+end
+end)
