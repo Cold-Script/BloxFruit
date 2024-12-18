@@ -34,7 +34,7 @@ while wait() do
 if Character:FindFirstChild("Rocket Fruit") or Backpack:FindFirstChild("Rocket Fruit") then
 Remotes:InvokeServer("StoreFruit","Rocket-Rocket",Backpack:FindFirstChild("Rocket Fruit"))
 end
-if Character:FindFirstChild("Rocket Fruit") or Backpack:FindFirstChild("Spin Fruit") then
+if Character:FindFirstChild("Spin Fruit") or Backpack:FindFirstChild("Spin Fruit") then
 Remotes:InvokeServer("StoreFruit","Spin-Spin",Backpack:FindFirstChild("Spin Fruit"))
 end
 if Character:FindFirstChild("Blade Fruit") or Backpack:FindFirstChild("Blade Fruit") then
@@ -76,6 +76,9 @@ end
 if Character:FindFirstChild("Rubber Fruit") or Backpack:FindFirstChild("Rubber Fruit") then
 Remotes:InvokeServer("StoreFruit","Rubber-Rubber",Backpack:FindFirstChild("Rubber Fruit"))
 end
+if Character:FindFirstChild("Barrier Fruit") or Backpack:FindFirstChild("Barrier Fruit") then
+Remotes:InvokeServer("StoreFruit","Barrier-Barrier",Backpack:FindFirstChild("Barrier Fruit"))
+end
 if Character:FindFirstChild("Ghost Fruit") or Backpack:FindFirstChild("Ghost Fruit") then
 Remotes:InvokeServer("StoreFruit","Ghost-Ghost",Backpack:FindFirstChild("Ghost Fruit"))
 end
@@ -95,7 +98,7 @@ if Character:FindFirstChild("Spider Fruit") or Backpack:FindFirstChild("Spider F
 Remotes:InvokeServer("StoreFruit","Spider-Spider",Backpack:FindFirstChild("Spider Fruit"))
 end
 if Character:FindFirstChild("Sound Fruit") or Backpack:FindFirstChild("Sound Fruit") then
-Remotes:InvokeServer("StoreFruit","Sound--Sound",Backpack:FindFirstChild("Sound Fruit"))
+Remotes:InvokeServer("StoreFruit","Sound-Sound",Backpack:FindFirstChild("Sound Fruit"))
 end
 if Character:FindFirstChild("Phoniex Fruit") or Backpack:FindFirstChild("Phoniex Fruit") then
 Remotes:InvokeServer("StoreFruit","Phoniex-Phoniex",Backpack:FindFirstChild("Phoniex Fruit"))
