@@ -13,8 +13,17 @@ __BY RECHEDMCVN__
 ⬛        ⬛   ⬛⬛⬜⬛⬜⬜⬛⬜⬛⬛    ⬛
 ⬛⬛⬛⬛⬛     ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛    ⬛
 ]]--
-function TP(Pos)
-game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = Pos
+function Tween(Pos)
+    Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+    if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
+    pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/400, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
+    tween:Play()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    if Distance <= 400 then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+        tween:Cancel()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+    end
 end
 local spawn = task.spawn
 local Character = game:GetService("Players").LocalPlayer.Character
@@ -24,7 +33,7 @@ spawn(function()
 while wait() do
 for i,v in pairs(game.Workspace:GetChildren()) do
 if string.find(v.Name, "Fruit") then
-TP(v.Handle.CFrame)
+Tween(v.Handle.CFrame)
 end
 end
 end
